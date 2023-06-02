@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+  <div id="pageloader">
+  </div>
+   <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9J2Smg6j0pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9J2Smg6j0pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9J2Smg6j0pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9J2Smg6j0pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  
+    <nav class="navbar navbar-expand-lg  z-index">
+        <div class="container-fluid">
+           <div class="content"></div> 
+           <div class="flexible">
+   <img src="./images/logo.jpg" alt="ride" style="width: 90px; cursor: pointer;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-6 fw-bold" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about.html">
+                <a class="nav-link fs-6 fw-bold" href="#scrollspyHeading1">About us</a>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-bold" href="#scrollspyHeading2">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-bold" href="#scrollspyHeading3">Tools</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Accessories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">My parts</a>
+                  <a class="dropdown-item" href="#">Bike Plans</a>
+                  <a class="dropdown-item" href="#">Show</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-6 fw-bold"  href="#scrollspyHeading4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCESSORIES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-bold" href="#scrollspyHeading5">Contact us</a>
+              </li>
+            </ul>
+          
+            <form class="d-flex" role="search">
+             
+             <!-- Button trigger modal -->
+<button type="button" class=" btn btn-outline-success rounded-pill ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Sign-in
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">A ride</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="name" class="form-control" id="name" aria-describedby="name">
+         
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Password</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Forget Password</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar-finish -->
+
+      <!-- section-start -->
+
+    <section id="bg-color">  
+        <div class="container">
+    <div class="row">
+
+            <div class="row my-5 flex">
+
+             
+            <div class="col-lg-6 col-md-6 col-12 d-md-block  align-items-start flex-column">
+                <h1 class="text-light fs-1">Royal Enfield Himalayan Bikes For Ride</h1>
+                <p class="lh-base color">Upon its introduction, the Himalayan was praised for its good suspension and off-road ability, while some criticism was directed to the relatively low power output of the engine.[4] 
+                    The motorcycle also has longer intervals between servicing and oil changes.[5]
+                </p>
+                <div class="col-lg-6 col-md-12 col-12 col-xxl-6">
+                    <button type="button" class="btn btn-outline-info col-lg-6 col-md-6 col-12" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="who-am-i">
+                        Check-More</button>
+                    <!-- Button trigger modal -->
+            <button type="button" class="btn ps-3 col-lg-6 col-md-6 col-12 col-xxl-6 text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Watch More<span><i class="fa fa-play-circle "></i></span>
+            </button>
+          
+                </div>
+                
+                <div class="modal fade text-center" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" style="min-width: 800px;">
+                    <div class="modal-content">
+                      
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/wBAabkrZBIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      
+                      
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>   
+                      </div>
+                    </div>
+                  </div>
+                
+             </div>
+              <div class="col-lg-6 col-md-6 col-12 col-xxl-6 ">
+                <label for="exampleDataList" class="form-label"></label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search your bike here, e.g. Royal Enfield Hunter 350">
+                <datalist id="datalistOptions">
+                  <option value="San Francisco">
+                  <option value="New York">
+                  <option value="Seattle">
+                  <option value="Los Angeles">
+                  <option value="Chicago">
+                </datalist>
+             </div>
+            </div>
+             </div>
+       </div>
+    </section>
+
+    <!-- section-finish -->
+
+   
+
+    <section class="main-heading py-5"  id="scrollspyHeading1"> 
+        <div class="text-center">
+           <h1 class="displaY-4 color-head">about us</h1>
+             <hr class="w-25 mx-auto" />
+          </div>
+          <div class="container">
+            <div class="row my-5 flex">
+       
+               <div class="col-lg-8 col-md-8 col-12 col-xxl-4 d-flex align-items-start flex-column text-media">
+                  <h1>My Himalayan</h1>
+                  <p class="lh-md fs-6 fw-bold py-4">The Himalayan's engine was designed and produced by Royal Enfield from the ground-up and shares little to no parts with other contemporaries in the company's line-up.[8] The engine, named the LS410 indicating its long-stroke ratio, 
+                    is a unit-construction 411 cc single-cylinder, 
+                    oil-cooled 4-stroke SOHC engine
+                    The motor generates a power output of 24.5 bhp at 6,500 rpm (18.02 KW) and a maximum torque of 32 Nm at 4,000-4,500 rpm. The engine also includes an oil cooler, a first among motorcycles manufactured by Royal Enfield India. The bike employs electronic
+                     fuel injection and the engine is mated to a 5-speed constant mesh transmission.[9]
+                     Braking power is modest, with a 2-piston front caliper squeezing a 300mm disc and a 1-piston rear caliper biting a 240mm disc. Suspension action is adequate. The fork offers no adjustability, the rear shock is adjustable for preload, and travel is 7.9 
+                     Royal Enfield has introduced several unique, attractively priced models over the past few years. Following the Himalayan’s debut in 2018, it rolled out a handsome pair of British-style 
+                     Twins – the Continental GT café racer and INT 650 standard – in 2019, and then the Meteor 350 cruiser in 2021
+                  </p>
+                  <!-- <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="who-am-i">
+                    </button> -->
+               </div>
+               <div class="col-lg-4 col-md-4 col-12 col-xxl-4">
+                <div class="card media-image" style="width: 18rem;">
+                    <img src="./images/card.jpg" class="card-img-top" alt="card-image">
+                    <div class="card-body">
+                      <h5 class="card-title fs-3">Himalyan</h5>
+                      <p class="card-text">	Front - 300 mm disc with 2-piston floating caliper, Back - 240 mm disc with single piston caliper With ABS as standard</p>
+                    </div>
+                  </div>
+            </div>
+            </div>
+          </div>
+          </section>
+
+    <section class="ad-banner">
+      <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+         <figure>
+             <img src="./images/ad-banner.jpg" alt="ad" title="ad">
+         </figure>
+         </div>
+         <div class="carousel-item">
+         <figure>
+             <img src="./images/bike-ad.jpg.png" alt="ad" title="ad">
+         </figure>
+         </div>
+         <div class="carousel-item">
+         <figure>
+             <img src="./images/ad-2.jpg" alt="ad" title="ad">
+         </figure>
+         </div>
+         </div>
+         </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="bgimg" id="scrollspyHeading2">
+      <div class="text-center py-4">
+        <h1 class="displaY-4 color-head">Services</h1>
+          <hr class="w-25 mx-auto" />
+
+          <div class="container">
+            <div class="row my-5 flex">
+       
+               <div class="col-lg-8 col-md-8 col-12 col-xxl-6 d-flex align-items-start flex-column">
+                <h3 class="fs-3">2022 Royal Enfield Himalayan Specs</h3>
+                 <div class="text-start">
+                    <strong>Base Price:</strong> $5,299<br>
+                    <strong>Website:</strong> royalenfield.com<br>
+                    <strong>Engine Type:</strong> Air-cooled Single, SOHC w/ 2 valves<br>
+                    <strong>Displacement:</strong> 411cc<br>
+                    <strong>Bore x Stroke:</strong> 78.0 x 86.0mm<br>
+                    <strong>Horsepower:</strong> 24.3 hp @ 6,500 rpm (claimed, at the crank)<br>
+                    <strong>Torque:</strong> 23.6 lb-ft @ 4,250 rpm (claimed, at the crank)<br>
+                    <strong>Transmission:</strong> 5-speed, cable-actuated wet clutch<br>
+                    <strong>Final Drive:</strong> O-ring chain<br>
+                    <strong>Wheelbase:</strong> 58.0 in.<br>
+                    <strong>Rake/Trail:</strong> 26.5 degrees/4.3 in.<br>
+                    <strong>Seat Height:</strong> 31.5 in.<br>
+                    <strong>Wet Weight:</strong> 439 lbs. (claimed)<br>
+                    <strong>Fuel Capacity:</strong> 4.0 gals.<br>
+               </div>
+                </div>
+
+                
+               <div class="col-lg-4 col-md-4 col-12 col-xxl-6">
+                <div class="grid-4 scroll" id="page-link">
+                  <div class="content-box-shadow section-bottom-margin"><h2 class="sidebar-list-heading">Upcoming Royal Enfield Bikes</h2>
+                    <div class="sidebar-list--overflow">
+                          <ul class="sidebar-bike-list sidebar-list__upcoming-bikes">
+           <li title="Royal Enfield Bullet 350 Next Gen"><a href="/royalenfield-bikes/bullet-350-next-gen/" title="Royal Enfield Bullet 350 Next Gen" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/127499/bullet-350-next-gen-right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Bullet 350 Next Gen" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Bullet 350 Next Gen</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+           <span class="font16">₹</span><span class="font16 text-bold">&nbsp;1,50,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text ">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Medium
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Some of the information about the launch of this model comes from an authoritative source and is correct to a good extent. The launch date and estimated price are tentative.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="1959" data-bikename="Royal Enfield Bullet 350 Next Gen" data-lab="Bullet 350 Next Gen_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Shotgun 650"><a href="/royalenfield-bikes/shotgun-650/" title="Royal Enfield Shotgun 650" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/108889/shotgun-650-right-rear-three-quarter.jpeg?isig=0&amp;q=75" alt="Royal Enfield Shotgun 650" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Shotgun 650</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;3,00,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="1767" data-bikename="Royal Enfield Shotgun 650" data-lab="Shotgun 650_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Himalayan 650"><a href="/royalenfield-bikes/himalayan-650/" title="Royal Enfield Himalayan 650" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/106133/right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Himalayan 650" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Himalayan 650</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;4,00,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="1713" data-bikename="Royal Enfield Himalayan 650" data-lab="Himalayan 650_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Himalayan 450"><a href="/royalenfield-bikes/himalayan-450/" title="Royal Enfield Himalayan 450" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/110431/himalayan-450-right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Himalayan 450" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Himalayan 450</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;2,60,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="1789" data-bikename="Royal Enfield Himalayan 450" data-lab="Himalayan 450_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Roadster 450"><a href="/royalenfield-bikes/roadster-450/" title="Royal Enfield Roadster 450" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/138829/roadster-450-left-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Roadster 450" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Roadster 450</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;2,40,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="2209" data-bikename="Royal Enfield Roadster 450" data-lab="Roadster 450_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Sherpa 650"><a href="/royalenfield-bikes/sherpa-650/" title="Royal Enfield Sherpa 650" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/138795/sherpa-650-right-rear-three-quarter.jpeg?isig=0&amp;q=75" alt="Royal Enfield Sherpa 650" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Sherpa 650</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;3,00,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="2205" data-bikename="Royal Enfield Sherpa 650" data-lab="Sherpa 650_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Himalayan Electric"><a href="/royalenfield-bikes/himalayan-electric/" title="Royal Enfield Himalayan Electric" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/146033/himalayan-electric-right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Himalayan Electric" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Himalayan Electric</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;7,00,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="2471" data-bikename="Royal Enfield Himalayan Electric" data-lab="Himalayan Electric_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Scrambler 450"><a href="/royalenfield-bikes/scrambler-450/" title="Royal Enfield Scrambler 450" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/138831/scrambler-450-right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Scrambler 450" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Scrambler 450</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;2,60,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="2211" data-bikename="Royal Enfield Scrambler 450" data-lab="Scrambler 450_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+           <li title="Royal Enfield Himalayan Raid 450"><a href="/royalenfield-bikes/himalayan-raid-450/" title="Royal Enfield Himalayan Raid 450" class="bike-target-link padding-bottom0"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/138825/himalayan-raid-450-right-side-view.jpeg?isig=0&amp;q=75" alt="Royal Enfield Himalayan Raid 450" border="0"></div><div class="bike-target-content inline-block padding-left10"><h3 class="bikes">Royal Enfield Himalayan Raid 450</h3>
+                      <p class="font11 text-light-grey">Expected price</p>
+  <span class="font16">₹</span><span class="font16 text-bold">&nbsp;3,50,000 <span class="font14">onwards</span></span>
+                      
+                  </div></a>
+                  <div class="confidence-text-wrapper js-confidence-text confidence-low">Launch Confidence: &nbsp;<span class="confidence__value margin-right5">
+                          Low
+                      </span><span class="bwsprite info-icon tooltip-icon-target tooltip-top"><span class="bw-tooltip info-tooltip"><span class="bw-tooltip-text">Information about this launch is based upon speculations &amp; rumours and may not be correct.</span></span></span></div>
+                   <div class="model-card__notify-slug"><div class="notify-slug__wrapper"><button class="btn card__notify-btn js-card__notify-btn js-alertme__notify-btn bw-ga" data-popup="alert-me_notifyPopup" data-makeid="11" data-modelid="2207" data-bikename="Royal Enfield Himalayan Raid 450" data-lab="Himalayan Raid 450_Royal Enfield" data-cat="Make_Page" data-act="Upcoming_Widget_Notify_me_clicked" data-customact="Upcoming_Widget_Notify_Me_Phone_Submitted" data-bhrigucat="BWMakePage"><span class="notify-bell-icon"></span><span class="notify-btn-text"> Notify me on launch</span></button></div></div>
+          </li>
+  </ul>
+
+  
+  
+      
+                  <div class="content-box-shadow section-bottom-margin"></div>
+  <div class="alert-me-popup"><div id="alert-me_notifyPopup" class="popup-container" data-direction="none"><div class="popup-overlay"></div><div class="popup"><div class="popup-close-button" role="button" aria-label="Close popup"></div><div class="notify-popup__alert-screen"><div class="popup-head"><span class="popup_bell-icon"></span><p class="font14">To get updates about</p><p class="popup-head__title js-alertme-details__model"></p><div class="text-light-grey">Please enter your mobile number</div></div><div class="popup-body"><div class="popup-body-content form-field__content"><input type="tel" id="notifyNumberField" class="form-control" placeholder="Enter your mobile number" aria-label="Enter your mobile number" maxlength="10"><button type="button" id="notifySubmitBtn" class="btn btn-orange btn-full-width margin-top20 form-alertme__submit-btn" aria-label="Submit">Submit</button><p class="alertme-field__error-message"></p></div></div></div><div class="notify-popup__thank-you-screen hide"><div class="popup-head"><span class="popup_thumbs-up"></span><p class="popup-head__title">Thank You!</p></div><div class="popup-body"><div class="popup-body-content form-field__content"><div class="text-center text-light-grey">We will notify you when <span class="js-alertme-details__model"></span> gets launched</div><button type="button" class="btn btn-orange btn-full-width okbtn margin-top30" aria-label="Okay">Okay</button></div></div></div></div></div></div>
+  
+  
+                  <div class="content-box-shadow section-bottom-margin">
+                          <div class="content-box-shadow section-bottom-margin"><h2 class="sidebar-list-heading">Royal Enfield showrooms</h2><div class="sidebar-list--overflow">
+                                  
+  
+      <!-- <ul class="sidebar-bike-list sidebar__city-list">
+                  <li><a href="/dealer-showrooms/royalenfield/bangalore/" title="Royal Enfield showrooms in Bangalore" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-bangalore-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Bangalore</p>
+                                  <p class="font12 text-semibold text-light-grey">33 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/hyderabad/" title="Royal Enfield showrooms in Hyderabad" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-hyderabad-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Hyderabad</p>
+                                  <p class="font12 text-semibold text-light-grey">32 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/chennai/" title="Royal Enfield showrooms in Chennai" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-chennai-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Chennai</p>
+                                  <p class="font12 text-semibold text-light-grey">29 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/delhi/" title="Royal Enfield showrooms in Delhi" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-delhi-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Delhi</p>
+                                  <p class="font12 text-semibold text-light-grey">28 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/pune/" title="Royal Enfield showrooms in Pune" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-pune-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Pune</p>
+                                  <p class="font12 text-semibold text-light-grey">24 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/mumbai/" title="Royal Enfield showrooms in Mumbai" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-mumbai-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Mumbai</p>
+                                  <p class="font12 text-semibold text-light-grey">15 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/kolkata/" title="Royal Enfield showrooms in Kolkata" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-kolkata-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Kolkata</p>
+                                  <p class="font12 text-semibold text-light-grey">12 Royal Enfield showrooms</p>
+                          </div></a></li>
+                  <li><a href="/dealer-showrooms/royalenfield/lucknow/" title="Royal Enfield showrooms in Lucknow" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-lucknow-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">Lucknow</p>
+                                  <p class="font12 text-semibold text-light-grey">8 Royal Enfield showrooms</p>
+                          </div></a></li>
+              <li><a href="/dealer-showrooms/royalenfield/" title="Royal Enfield showrooms in India" class="bike-target-link"><div class="bike-target-image inline-block"><span class="bwm-city-sprite c-india-icon"></span></div><div class="bike-target-content inline-block padding-left10"><p class="dealer-showroom__city">India</p>
+                              <p class="font12 text-semibold text-light-grey">1,912 Royal Enfield showrooms</p>
+                      </div></a></li>
+  
+      </ul> -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+       <figure>
+        <img src="./images/card.jpg">
+        </figure>
+          </div>
+          <div class="carousel-item">
+       <figure>
+        <img src="./images/bg.jpg" class="img-fluid">
+        </figure>
+          </div>
+        </div>
+      </div>
+  
+  
+                                  <div class="view-all-btn-container padding-10-20-20"><a href="/dealer-showrooms/royalenfield/" title="Royal Enfield showrooms in India" class="btn view-all-target-btn">View all<span class="bwsprite teal-right"></span></a></div></div></div>
+                  </div>
+                      <!-- <section><div class="sponsored-card promotional-content">
+  <div id="div-gpt-ad-1516179232964-3" class="adslot-margin text-center" style="width:300px; " data-load-immediate="false" data-google-query-id="CPKAidLnhv8CFZKIcAodZ9gEig">
+                          
+                      <div id="google_ads_iframe_/1017752/Bikewale_Make_ATF_300x250_0__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/1017752/Bikewale_Make_ATF_300x250_0" name="google_ads_iframe_/1017752/Bikewale_Make_ATF_300x250_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="1"></iframe></div></div>                        </div></section>
+                  <div class="content-box-shadow section-bottom-margin"></div> -->
+  
+  
+  
+  
+                  <div class="content-box-shadow section-bottom-margin"><h2 class="sidebar-list-heading">Brands Similar to Royal Enfield</h2><div class="sidebar-list--overflow">
+                          
+      <ul class="sidebar-bike-list list-type-brand">
+              <li><a href="www.yamaha.com" title="Yamaha Bikes" target="_blank" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/yamaha20200508193220.jpg" height="61" width="110" alt="Yamaha Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="www.ktm.com" title="KTM Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/ktm20200518163508.jpg" height="61" width="110" alt="KTM Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/jawa-bikes/" title="Jawa Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/jawa20200508192940.jpg" height="61" width="110" alt="Jawa Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/keeway-bikes/" title="Keeway Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/n/cw/ec/115/brands/logos/keeway1652859658203.jpg?v=1652859658281" height="61" width="110" alt="Keeway Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/husqvarna-bikes/" title="Husqvarna Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/husqvarna20200508192901.jpg" height="61" width="110" alt="Husqvarna Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/tvs-bikes/" title="TVS Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/tvs20200508193203.jpg" height="61" width="110" alt="TVS Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/hero-bikes/" title="Hero Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/hero20200508192826.jpg" height="61" width="110" alt="Hero Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/bajaj-bikes/" title="Bajaj Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/bajaj20200508192534.jpg" height="61" width="110" alt="Bajaj Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+              <li><a href="/honda-bikes/" title="Honda Bikes" class="bike-target-link"><div class="bike-target-image inline-block"><img src="https://imgd.aeplcdn.com/110x61/bw/makes/honda20200511152343.jpg" height="61" width="110" alt="Honda Bikes" border="0"></div><div class="bike-target-content inline-block padding-left10"><p class="text-semibold font14"></p><p class="font12 text-slate-grey"></p></div></a></li>
+      </ul>
+  
+                      </div><div class="view-all-btn-container padding-10-20-20"><a href="/new-bikes-in-india/" title="New Bikes in India" class="btn view-all-target-btn">View all<span class="bwsprite teal-right"></span></a></div></div>
+                      <!-- <section><div class="promotional-content">
+  <div id="div-gpt-ad-1516179232964-4" class="adslot-margin text-center" style="width:300px; " data-load-immediate="false" data-google-query-id="COGX6dPnhv8CFb9QnQkdST4EBA">
+                          
+                      <div id="google_ads_iframe_/1017752/Bikewale_Make_BTF_300x250_0__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/1017752/Bikewale_Make_BTF_300x250_0" name="google_ads_iframe_/1017752/Bikewale_Make_BTF_300x250_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="2"></iframe></div></div>             
+                               </div></section> -->
+                  <div class="content-box-shadow section-bottom-margin"></div>
+  
+                  <div class="content-box-shadow section-bottom-margin"><p class="sidebar-list-heading">Research More</p>
+                      
+      <ul class="research-more__list">
+          
+              <li><a href="/royalenfield-bikes/" title="Royal Enfield Bikes">Royal Enfield Bikes</a></li>
+  
+              <li><a href="/used/royalenfield-bikes-in-india/" title="Used Royal Enfield Bikes in India">Used Royal Enfield Bikes</a></li>
+         
+                  <li><a href="/service-centers/royalenfield/" title="Royal Enfield Service Centers in India">Royal Enfield Service Centers</a></li>
+  
+          <li><a href="/best-bikes-in-india/" title="Top 10 Bikes"> Top 10 Bikes</a></li></ul>
+  
+                  </div>
+              
+  
+              <section><div class="margin-top10 promotional-content">
+  <div id="div-gpt-ad-1516179232964-5" class="adslot-margin text-center" style="width:300px; " data-load-immediate="false" data-google-query-id="CN6Ug9Tnhv8CFYWYcAodF4oITQ">
+                          
+                     
+            </div>
+            </div>
+          </div>
+       </div>
+    </section>
+
+    <section class="bgimg" id="scrollspyHeading3">
+      <div class="text-center py-4">
+        <h1 class="displaY-4 color-head">Tools</h1>
+          <hr class="w-25 mx-auto"/>
+          <div class="container">
+          <div class="">
+            <ul class="sliderme">
+             <li>
+              <div class="card card-style" style="width: 18rem;">
+                <img src="./images/hunter.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-align" style="line-height: 2;">
+                  <p class="card-text">
+                    <div class="card-desc-block">
+                      <a href="/royalenfield-bikes/hunter-350/" title="Royal Enfield Hunter 350">
+                      <div class="bikeTitle">Royal Enfield Hunter 350</div>
+                    </a>
+                    <p class=" font14 margin-bottom10">
+                <span>349.34 cc</span>, <span>35 kmpl</span>, <span>20.2 bhp</span>, <span>177 kg</span></p>
+                       <div class="font14 text-light-grey margin-bottom5">
+                          Avg. Ex-showroom price
+                        <span class=""></span>
+                      </div>
+                      <div class="text-bold text-default fs-4">
+                        <span class="font18">₹ 1,49,900</span>
+                        <span class="font14"> onwards</span>
+                      </div>
+                  <button class="btn border-danger hover">
+                    <a href="javascript:void(0);" data-pagecatid="5" class="atag" data-pqsourceid="62" data-makename="Royal Enfield" data-modelname="Hunter 350" data-modelid="1885" rel="nofollow">
+                      Check on-road price</a>
+                  </button>
+                </div>
+                </a>
+              </p>
+                </div>
+              </div>
+             </li>
+             <li>
+              <div class="card card-style" style="width: 18rem;">
+                <img src="./images/bullet.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-align" style="line-height: 2;">
+                  <p class="card-text">
+                    <div class="card-desc-block">
+                      <a href="/royalenfield-bikes/hunter-350/" title="Royal Enfield Hunter 350">
+                      <div class="bikeTitle">Royal Enfield Classic 350</div>
+                    </a>
+                    <p class=" font14 margin-bottom10">
+                <span>349.11 cc</span>, <span>35 kmpl</span>, <span>20.2 bhp</span>, <span>195 kg</span></p>
+                       <div class=" margin-bottom5">
+                          Avg. Ex-showroom price
+                        <span class=""></span>
+                      </div>
+                      <div class="text-bold text-default fs-4">
+                        <span class="font18">₹ 1,93,800</span>
+                        <span class="font14"> onwards</span>
+                      </div>
+                      <button class="btn border-danger hover">
+                        <a href="javascript:void(0);" data-pagecatid="5" class="atag" data-pqsourceid="62" data-makename="Royal Enfield" data-modelname="Hunter 350" data-modelid="1885" rel="nofollow">
+                          Check on-road price</a>
+                      </button>
+                </div>
+                </a>
+              </p>
+                </div>
+              </div>
+             </li>
+             <li>
+              <div class="card card-style" style="width: 18rem;">
+                <img src="./images/metor.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-align" style="line-height: 2;">
+                  <p class="card-text">
+                    <div class="card-desc-block">
+                      <a href="/royalenfield-bikes/hunter-350/" title="Royal Enfield Hunter 350">
+                      <div class="bikeTitle">Royal Enfield Super Meteor 650 </div>
+                    </a>
+                    <p class=" font14 margin-bottom10">
+                <span>365.44 cc</span>, <span>36 kmpl</span>, <span>23.2 bhp</span>, <span>188 kg</span></p>
+                       <div class="font14 text-light-grey margin-bottom5">
+                          Avg. Ex-showroom price
+                        <span class=""></span>
+                      </div>
+                      <div class="text-bold text-default fs-4">
+                        <span class="font18">₹ 2,59,300</span>
+                        <span class="font14"> onwards</span>
+                      </div>
+                      <button class="btn border-danger hover">
+                        <a href="javascript:void(0);" data-pagecatid="5" class="atag" data-pqsourceid="62" data-makename="Royal Enfield" data-modelname="Hunter 350" data-modelid="1885" rel="nofollow">
+                          Check on-road price</a>
+                      </button>
+                </div>
+                </a>
+              </p>
+                </div>
+              </div>
+             </li>
+             <li>
+              <div class="card card-style" style="width: 18rem;">
+                <img src="./images/bull-next.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-align" style="line-height: 2;">
+                  <p class="card-text">
+                    <div class="card-desc-block">
+                      <a href="/royalenfield-bikes/hunter-350/" title="Royal Enfield Hunter 350">
+                      <div class="bikeTitle">Royal Enfield Bullet 350 next gen</div>
+                    </a>
+                    <p class=" font14 margin-bottom10">
+                <span>356.34 cc</span>, <span>36 kmpl</span>, <span>20.5 bhp</span>, <span>178 kg</span></p>
+                       <div class="font14 text-light-grey margin-bottom5">
+                          Avg. Ex-showroom price
+                        <span class=""></span>
+                      </div>
+                      <div class="text-bold text-default fs-4">
+                        <span class="font18">₹ 3,25,780</span>
+                        <span class="font14"> onwards</span>
+                      </div>
+                      <button class="btn border-danger hover">
+                        <a href="javascript:void(0);" data-pagecatid="5" class="atag" data-pqsourceid="62" data-makename="Royal Enfield" data-modelname="Hunter 350" data-modelid="1885" rel="nofollow">
+                          Check on-road price</a>
+                      </button>
+                </div>
+                </a>
+              </p>
+                </div>
+              </div>
+             </li>
+             <li>
+              <div class="card card-style" style="width: 18rem;">
+                <img src="./images/bullet2.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-align" style="line-height: 2;">
+                  <p class="card-text">
+                    <div class="card-desc-block">
+                      <a href="/royalenfield-bikes/hunter-350/" title="Royal Enfield Hunter 350">
+                      <div class="bikeTitle">Royal Enfield Hunter 350</div>
+                    </a>
+                    <p class=" font14 margin-bottom10">
+                <span>346.34 cc</span>, <span>34 kmpl</span>, <span>20.2 bhp</span>, <span>173 kg</span></p>
+                       <div class="font14 text-light-grey margin-bottom5">
+                          Avg. Ex-showroom price
+                        <span class=""></span>
+                      </div>
+                      <div class="text-bold text-default fs-4">
+                        <span class="font18">₹ 1,25,780</span>
+                        <span class="font14"> onwards</span>
+                      </div>
+                      <button class="btn border-danger hover">
+                        <a href="javascript:void(0);" data-pagecatid="5" class="atag" data-pqsourceid="62" data-makename="Royal Enfield" data-modelname="Hunter 350" data-modelid="1885" rel="nofollow">
+                          Check on-road price</a>
+                      </button>
+                </div>
+                </a>
+              </p>
+                </div>
+              </div>
+             </li>
+             
+            </ul>
+          </div>
+
+      </div>
+          </div>
+      
+          </section>
+    
+
+          <!-- acordian -->
+
+          <!-- <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div> -->
+       
+
+    <section  id="scrollspyHeading5">
+      <div class=" py-4">
+        <h1 class="displaY-4 color-head text-center">Contact us</h1>
+          <hr class="w-25 mx-auto" />
+          <div class="container">
+            <div class="row my-5 flex">
+              <div class="container">
+                <form class="line">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="first">First Name</label>
+                        <input type="text" class="form-control" placeholder="" id="first">
+                      </div>
+                    </div>
+                 
+              
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="last">Last Name</label>
+                        <input type="text" class="form-control" placeholder="" id="last">
+                      </div>
+                    </div>
+                  </div>
+              
+              
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" placeholder="" id="company">
+                      </div>
+              
+              
+                    </div>
+              
+                    <div class="col-md-6">
+              
+                      <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="phone">
+                      </div>
+                    </div>
+                  </div>
+              
+              
+                  <div class="row">
+                    <div class="col-md-6">
+              
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="email">
+                      </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="url">Your Website <small>Please enter your bike name and model</small></label>
+                        <input type="url" class="form-control" id="url" placeholder="bike">
+                      </div>
+              
+                    </div>
+                  </div>
+              
+              
+                  <label for="contact-preference">When is the best time of day to reach you?</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+                    </label>
+                  </div>
+              
+                  <label for="newsletter">Would you like to recieve our email newsletter?</label>
+                  <div class="checkbox">
+              
+                    <label>
+                      <input type="checkbox" value="Sure!" id="newsletter"> Sure!
+                    </label>
+                  </div>
+              
+              
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+          </div>
+            </div>
+      </div>
+    </section>
+
+
+    <footer class="nb-footer" >
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+      <div class="about">
+        <img src="" class="img-responsive center-block" alt="">
+       
+      
+        <div class="social-media">
+          <ul class="list-inline d-flex gap-3 justify-content-center">
+            <li><a href="http://www.facebook.com/" target="_blank" title=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://www.twitter.com/" target="_blank" title=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.google-plus.com/" target="_blank" title=""><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="http://www.linkedin.com/" target="_blank" title=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="footer-info-single">
+        <h2 class="title">Help Center</h2>
+        <ul class="list-unstyled">
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+          <li><a href="./sitemap.xml" title="" target="_blank"><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="footer-info-single">
+        <h2 class="title">Customer information</h2>
+        <ul class="list-unstyled">
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="footer-info-single">
+        <h2 class="title">Security & privacy</h2>
+        <ul class="list-unstyled">
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+          <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+      <div class="footer-info-single">
+        <h2 class="title">download the mobile app</h2>
+      
+       <figure>
+       <img src="./images/google-play.svg" alt="play-store">
+      </figure>
+       <figure>
+       <img src="./images/app-store.svg" alt="play-store" style="width:140px; ">
+      </figure>
+
+      </div>
+      </div>
+      </div>
+      </div>
+    </footer>
+      <section class="copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-6">
+      <p>Copyright © 2017. Your Company.</p>
+      </div>
+      <div class="col-sm-6"></div>
+      </div>
+      </div>
+      </section>
+      
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./script.js"></script>
+</html>
+
