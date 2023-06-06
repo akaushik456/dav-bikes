@@ -12,6 +12,28 @@
     background-size: cover;
     width: 100%;
 }
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+  
+h1 {
+    font-weight: normal;
+    letter-spacing: .1em;
+}
+  
+.count-down{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 1em;
+}
+  
+.count-down span {
+    display: block;
+    font-size: 4.5rem;
+}
+
 ul{
     list-style: none;
 }
