@@ -6,16 +6,16 @@ window.addEventListener("load" , function(){
 
 // header-top
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 50) {
-        $('nav').addClass('fixed-header');
-        $('nav div').addClass('visible-title');
-    }
-    else {
-        $('nav').removeClass('fixed-header');
-        $('nav div').removeClass('visible-title');
-    }
-});
+// $(window).scroll(function(){
+//     if ($(window).scrollTop() >= 50) {
+//         $('nav').addClass('fixed-header');
+//         $('nav div').addClass('visible-title');
+//     }
+//     else {
+//         $('nav').removeClass('fixed-header');
+//         $('nav div').removeClass('visible-title');
+//     }
+// });
 
 
 $(".sliderme").slick({
